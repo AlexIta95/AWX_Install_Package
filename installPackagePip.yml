@@ -2,8 +2,6 @@
   become: yes
   tasks:
   - name: Install package
-    apt:
-      name: 
-      - pip
-      state: latest
-      cache_valid_time: 3600
+    yum:
+          name: httpd
+          state: latest
